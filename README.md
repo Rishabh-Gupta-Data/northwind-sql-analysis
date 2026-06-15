@@ -26,7 +26,7 @@ This project contains SQL analysis performed on the Northwind database using Pos
 
 1. Top 5 customers by order count
 2. Top 5 customers by revenue
-3. 
+3. Categories with Average Price Greater Than 40
 4. Find best-selling products. 
 5. Find repeat customers.
 6. Show monthly order counts. 
