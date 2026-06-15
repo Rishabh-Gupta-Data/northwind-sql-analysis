@@ -35,3 +35,23 @@ JOIN products p
 ON c.category_id = p.category_id
 GROUP BY c.category_id
 HAVING AVG(p.unit_price) > 40;
+
+
+-- Find best-selling products.
+SELECT p.product_id, p.product_name, SUM(od.quantity) AS Total_quantity_sold 
+FROM products p
+JOIN order_details od
+ON p.product_id = od.product_id 
+GROUP BY p.product_id, p.product_name
+ORDER BY Total_quantity_sold DESC;
+LIMIT 1;
+
+
+
+
+
+
+
+
+
+
