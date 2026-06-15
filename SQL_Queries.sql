@@ -47,6 +47,24 @@ ORDER BY Total_quantity_sold DESC;
 LIMIT 1;
 
 
+-- Find repeat customers.
+SELECT c.customer_id, c.contact_name, COUNT(o2.order_id) AS total_order
+FROM customers c
+JOIN orders2 o2
+ON c.customer_id = o2.customer_id 
+GROUP BY c.customer_id, c.contact_name
+HAVING COUNT(o2.order_id) >1
+ORDER BY total_order DESC;
+
+
+-- Show monthly order counts.
+SELECT EXTRACT(MONTH FROM order_date) AS MONTH,
+		COUNT(order_id) AS order_count
+FROM orders2
+GROUP BY  EXTRACT(MONTH FROM order_date)
+ORDER BY MONTH ASC;
+
+
 
 
 
