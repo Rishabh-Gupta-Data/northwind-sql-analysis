@@ -31,6 +31,7 @@ This project contains SQL analysis performed on the Northwind database using Pos
 5. Find repeat customers.
 6. Show monthly order counts.
 7.  Find sales by ship country.
+8.  Find top 10 revenue-generating customers.
 ## Dataset
 
 Northwind Sample Database
