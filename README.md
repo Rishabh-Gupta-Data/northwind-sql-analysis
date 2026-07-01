@@ -29,7 +29,8 @@ This project contains SQL analysis performed on the Northwind database using Pos
 3. Categories with Average Price Greater Than 40
 4. Find best-selling products. 
 5. Find repeat customers.
-6. Show monthly order counts. 
+6. Show monthly order counts.
+7.  Find sales by ship country.
 ## Dataset
 
 Northwind Sample Database
